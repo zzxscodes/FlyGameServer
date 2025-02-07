@@ -1,11 +1,19 @@
+### 依赖
 Linux（Ubuntu）平台下，
 需要配置mysql、redis、protobuf、libuv的开发环境
 
-然后进入build目录内后 cmake .. make
-编译构建后在bin目录下有可执行文件FlyGameServer，
+### 编译构建
+进入build目录内后
+cmake .. 
+make
+编译构建后在bin目录下有可执行文件FlyGameServer
 
-scripts下进行脚本开发，有示例参考， 
-执行方式如： ./FlyGameServer ../scripts/ server.lua，
+###业务逻辑开发
+scripts下进行脚本开发，
+示例参考与执行方式：
+./FlyGameServer ../scripts/server.lua，
+
+### 测试
 测试代码在echo_client和echo_server下
 
 测试日志输出如下：
